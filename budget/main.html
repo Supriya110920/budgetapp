@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="work.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">BUDGET<p class="cool">MAN</p></h1>
+        <div class="section1">
+            <div class="budget-form">
+                <form action="#" id="form1">
+                    <label for="" style="background: green; font-size: 20px;">please enter you Income</label>
+                    <p class="error">value cannot be empty or negtive or zero</p>
+                    <input type="text" id="budget-amount" placeholder="Rs-">
+                    <button id="add-budget">add income</button>
+                </form>
+            </div>
+
+           
+
+        <div class="section2">
+            <div class="expense-form">
+                <form action="#" id="form2">
+                    <label for="" style="background: #ff4d4d;">please enter your expense Name</label>
+                    <p class="error"> value cannot be empty and cannot contain numbers </p>
+                    <input type="text" id="expense-name">
+                    <label for="" style="background: #ff4d4d;">please enter your expense amount</label>
+                    <p class="error"> value cannot be empty or negtive or zero </p>
+                    <input type="text" id="expense-amount">
+                    <button id="expense-add">add expense</button>
+                </form>
+            </div>
+
+             <div class="feedback">
+                <div class="feedback-item">
+                    <h2 class="feedback-item__title">budget</h2>
+                    <img class="feedback-item__image" src="image/dollar.png" alt="">
+                    <p class="feedback-item__amount green">
+                        <span id="feedback-item__budget__show">0</span>/-
+                    </p>
+                </div>
+
+                <div class="feedback-item">
+                    <h2 class="feedback-item__title">expenses</h2>
+                    <img class="feedback-item__image" src="image/expences.png" alt="">
+                    <p class="feedback-item__amount red">
+                         <span id="feedback-item__expenses__show">0</span>/-
+                    </p>
+                </div>
+
+                <div class="feedback-item">
+                    <h2 class="feedback-item__title">balance</h2>
+                    <img class="feedback-item__image" src="image/balance.png" alt="">
+                    <p class="feedback-item__amount yellow">
+                        <span id="feedback-item__balance__show">0</span>/-
+                    </p>
+                </div>
+
+            </div>
+        </div>
+            
+            <div class="expense-feedback">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="expense-title">expense title</th>
+                            <th class="expense-value">expense value</th>
+                            <th class="expence-value"></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <template id="expense-row">
+                    <tr>
+                        <td class="expense-title"></td>
+                        <td class="expense-value"></td>
+                        <td class="delete-edit">
+                            <img class="deleteRow" src="https://i.imgur.com/IWWbzZQ.png" alt="k">
+                            <img class="editRow" src="https://i.imgur.com/1waKVtP.png" alt="l">
+                        </td>
+                    </tr>
+                </template>
+
+            </div>
+
+
+        </div>
+    </div>
+    <footer style="text-align: center; color:#c7c5c1; background: black;">&copy; 2020 Supriya Ojha</footer>
+</body>
+</html>
